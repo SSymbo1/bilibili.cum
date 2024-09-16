@@ -1,0 +1,25 @@
+{
+    "default_tab": "广告屏蔽",
+    "menue_tab": [
+        {
+            "name": "广告屏蔽",
+            "icon": "LocationInformation",
+            "path": "/advertisment"
+        },
+        {
+            "name": "下载功能",
+            "icon": "Download",
+            "path": "/download"
+        },
+        {
+            "name": "站内优化",
+            "icon": "Compass",
+            "path": "/optimize"
+        },
+        {
+            "name": "关于插件",
+            "icon": "Setting",
+            "path": "/about"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+.container{
+    width: 350px;
+    height: 400px;
+}
+.side_menue{
+    height: 100%;
+    width: 60px;
+}
+.main_window{
+    margin-left: 10px;
+    height: 100%;
+    width: 280px;
+}

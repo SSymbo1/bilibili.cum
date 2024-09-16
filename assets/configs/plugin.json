@@ -1,0 +1,46 @@
+{
+    "config": {
+        "advertisement": {
+            "de_video_advertisement": {
+                "name": "去除视频播放界面广告",
+                "desc": "",
+                "enable": true,
+                "init": true
+            },
+            "de_home_advertisement": {
+                "name": "去除主站首页广告",
+                "desc": "",
+                "enable": true,
+                "init": true
+            }
+        },
+        "download": {
+            "download_video": {
+                "name": "视频下载功能",
+                "desc": "",
+                "enable": true,
+                "init": true
+            },
+            "cover_video": {
+                "name": "视频封面下载功能",
+                "desc": "",
+                "enable": true,
+                "init": true
+            }
+        },
+        "optimize": {
+            "vote_optimize": {
+                "name": "去除视频内投票",
+                "desc": "",
+                "enable": true,
+                "init": true
+            },
+            "hot_live_optimize": {
+                "name": "去除直播推荐",
+                "desc": "",
+                "enable": true,
+                "init": true
+            }
+        }
+    }
+}
