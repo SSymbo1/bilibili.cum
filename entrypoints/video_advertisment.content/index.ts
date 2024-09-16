@@ -1,5 +1,8 @@
+import plugin from '@/assets/configs/plugin.json'
+
 export default defineContentScript({
-    matches: ['*://*.bilibili.com/video/*'],
+    matches: plugin.config.advertisement.de_video_advertisement.matches,
+    excludeMatches: plugin.config.advertisement.de_video_advertisement.exclude,
     registration: "manifest",
     main: async (ctx) => {
         storage.getMeta('local:config').then((config: any) => {

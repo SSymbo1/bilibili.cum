@@ -1,5 +1,8 @@
+import plugin from '@/assets/configs/plugin.json'
+
 export default defineContentScript({
-    matches: ['*://*.bilibili.com/*'],
+    matches: plugin.config.advertisement.de_home_advertisement.matches,
+    excludeMatches: plugin.config.advertisement.de_home_advertisement.exclude,
     registration: "manifest",
     main: async (ctx) => {
         storage.getMeta('local:config').then((config: any) => {

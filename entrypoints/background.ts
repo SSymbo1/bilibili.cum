@@ -1,7 +1,9 @@
 import plugin from '@/assets/configs/plugin.json'
 
 export default defineBackground(() => {
+
   console.log('Hello background!', { id: browser.runtime.id });
+
   browser.runtime.onInstalled.addListener(({ reason }) => {
     if (reason === 'install') {
       storage.getMeta('local:config').then((config) => {
@@ -14,5 +16,17 @@ export default defineBackground(() => {
         }
       })
     }
+  })
+
+  browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    let matchesURL: Array<string> = []
+    matchesURL = Object.values(message.matches)
+    matchesURL.forEach((url) => {
+      browser.tabs.query({ url: url }).then((tabs) => {
+        tabs.forEach((tab) => {
+          browser.tabs.reload(tab.id)
+        })
+      })
+    })
   })
 });

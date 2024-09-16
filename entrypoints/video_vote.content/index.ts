@@ -1,5 +1,8 @@
+import plugin from '@/assets/configs/plugin.json'
+
 export default defineContentScript({
-    matches: ['*://*.bilibili.com/video/*',],
+    matches: plugin.config.optimize.vote_optimize.matches,
+    excludeMatches: plugin.config.optimize.vote_optimize.exclude,
     registration: "manifest",
     main: async (ctx) => {
         storage.getMeta('local:config').then((config: any) => {

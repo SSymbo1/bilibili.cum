@@ -6,10 +6,5 @@ export default defineConfig({
   manifestVersion: 3,
   manifest: {
     permissions: ['storage'],
-    icons: {
-      "16": "/icon/title.png",
-      "48": "/icon/title.png",
-      "128": "/icon/title.png"
-    }
   }
 });

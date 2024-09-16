@@ -4,8 +4,10 @@
   "private": true,
   "version": "1.0,0",
   "type": "module",
+  "homepage": "https://github.com/SSymbo1/bilibili.cum",
   "author": {
-    "name": "SSymbol"
+    "name": "SSymbol",
+    "email": "SS_ymbol@outlook.com"
   },
   "scripts": {
     "dev": "wxt",
