@@ -1,0 +1,10 @@
+{
+    "video_info": {
+        "url": "https://api.bilibili.com/x/web-interface/view?bvid=",
+        "method": "GET"
+    },
+    "video_stream": {
+        "url": "https://api.bilibili.com/x/player/playurl?bvid=${bvid}&cid=${cid}&fnval=${fnval}",
+        "method": "GET"
+    }
+}

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { ElMessage, ElMessageBox } from 'element-plus';
 import plugin from '@/package.json'
 import config from '@/assets/configs/plugin.json'
 
@@ -8,20 +7,21 @@ const initPluginConfig = async () => {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-    })
-    storage.setMeta('local:config', config.config)
-    ElMessage.success('插件配置初始化成功')
-}
+    });
+    storage.setMeta('local:config', config.config);
+    browser.runtime.sendMessage({ type: 'init', matches: ["*://*.bilibili.com/*"] });
+    ElMessage.success('插件配置初始化成功');
+};
 
 const checkPluginUpdate = () => {
-    window.open(plugin.homepage, '_blank')
-}
+    window.open(plugin.homepage, '_blank');
+};
 
 </script>
 
 <template>
     <div align="center">
-        <img src="../public/icon/128.png" width="80" align="center" />
+        <img src="../../public/icon/128.png" width="80" align="center" />
         <h1>{{ plugin.name }}</h1>
         <br />
         <strong>{{ plugin.description }}</strong>

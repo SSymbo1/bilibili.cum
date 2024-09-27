@@ -1,9 +1,8 @@
 import plugin from '@/assets/configs/plugin.json'
 
 export default defineBackground(() => {
-
   console.log('Hello background!', { id: browser.runtime.id });
-
+  // 配置项初始化
   browser.runtime.onInstalled.addListener(({ reason }) => {
     if (reason === 'install') {
       storage.getMeta('local:config').then((config) => {
@@ -11,22 +10,23 @@ export default defineBackground(() => {
         if (config === null || Object.keys(config).length === 0) {
           storage.setMeta('local:config', plugin.config);
           console.log('不存在配置项,已初始化配置项');
+          console.log(plugin.config);
         } else {
           console.log('存在配置项,继续');
-        }
-      })
+        };
+      });
     }
-  })
-
+  });
+  // 配置项更新监听
   browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    let matchesURL: Array<string> = []
-    matchesURL = Object.values(message.matches)
+    let matchesURL: Array<string> = [];
+    matchesURL = Object.values(message.matches);
     matchesURL.forEach((url) => {
       browser.tabs.query({ url: url }).then((tabs) => {
         tabs.forEach((tab) => {
-          browser.tabs.reload(tab.id)
-        })
-      })
-    })
-  })
+          browser.tabs.reload(tab.id);
+        });
+      });
+    });
+  });
 });

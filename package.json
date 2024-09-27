@@ -2,7 +2,7 @@
   "name": "bilibili.cum",
   "description": "网页端b站功能增强插件",
   "private": true,
-  "version": "1.0,0",
+  "version": "1.0.0",
   "type": "module",
   "homepage": "https://github.com/SSymbo1/bilibili.cum",
   "author": {
@@ -28,6 +28,8 @@
   "devDependencies": {
     "@wxt-dev/module-vue": "^1.0.0",
     "typescript": "^5.5.4",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
     "vue-tsc": "^2.0.29",
     "wxt": "^0.19.9"
   }

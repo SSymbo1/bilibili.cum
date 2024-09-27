@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-
 let ad_config: Ref = ref({});
 let plugin: Ref = ref({});
 
@@ -8,19 +6,18 @@ const getAdvertisementConfig = async () => {
     storage.getMeta('local:config').then((config) => {
         plugin.value = config as {};
         ad_config.value = config.advertisement as {};
-        console.log(ad_config.value);
-    })
-}
+    });
+};
 
 const setAdvertisementConfig = async (matches: Array<string>) => {
     plugin.value.advertisement = ad_config.value;
     storage.setMeta('local:config', plugin.value);
     browser.runtime.sendMessage({ type: 'addvertisement', matches: matches });
-}
+};
 
 onMounted(() => {
     getAdvertisementConfig();
-})
+});
 </script>
 
 <template>

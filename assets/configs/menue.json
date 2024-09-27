@@ -17,6 +17,11 @@
             "path": "/optimize"
         },
         {
+            "name": "播放设置",
+            "icon": "VideoPlay",
+            "path": "/video"
+        },
+        {
             "name": "关于插件",
             "icon": "Setting",
             "path": "/about"
