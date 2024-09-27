@@ -57,7 +57,7 @@ pnpm zip
 ├── .vscode 			(vscode配置文件目录)
 ├── assets 			(资源目录，构建过程中将被 vite 处理)
 |   ├─ config 			(插件脚本配置项目录)
-|	├─ i18n			(国际化目录<目前没用>)
+|   ├─ i18n			(国际化目录<目前没用>)
 |   └─ svg			(图标目录)
 ├── commponents 		(vue组件目录)
 |	├─ component		(通用组件)
