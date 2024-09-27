@@ -54,28 +54,28 @@ pnpm zip
 ### 5.项目结构
 
 ```
-├── .vscode 	(vscode配置文件目录)
-├── assets 		(资源目录，构建过程中将被 vite 处理)
-|   ├─ config 	(插件脚本配置项目录)
-|	├─ i18n		(国际化目录<目前没用>)
-|   └─ svg		(图标目录)
-├── commponents (vue组件目录)
-|	├─ component(通用组件)
-|	├─ content 	(功能界面组件)
-|	└─ popup	(弹出层组件)
-├── entrypoints (插件核心代码目录)
-|   ├─ popup 	(插件弹窗组件目录)
-|   ├─ <function_name>.content (功能脚本目录)
-|   └─ background.ts (后台脚本)
-├── public 		(插件资源目录，会被复制到输出目录)
-├── router 		(vue路由目录)
+├── .vscode 			(vscode配置文件目录)
+├── assets 			(资源目录，构建过程中将被 vite 处理)
+|   ├─ config 			(插件脚本配置项目录)
+|	├─ i18n			(国际化目录<目前没用>)
+|   └─ svg			(图标目录)
+├── commponents 		(vue组件目录)
+|	├─ component		(通用组件)
+|	├─ content 		(功能界面组件)
+|	└─ popup		(弹出层组件)
+├── entrypoints 		(插件核心代码目录)
+|   ├─ popup 			(插件弹窗组件目录)
+|   ├─ <function_name>.content  (功能脚本目录)
+|   └─ background.ts 		(后台脚本)
+├── public 			(插件资源目录，会被复制到输出目录)
+├── router 			(vue路由目录)
 ├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── package.json
 ├── pnpm-lock.yaml
-├── tsconfig.json (项目ts配置文件)
-└── wxt.config.js (wxt配置文件)
+├── tsconfig.json 		(项目ts配置文件)
+└── wxt.config.js 		(wxt配置文件)
 ```
 
 ## 关于插件
