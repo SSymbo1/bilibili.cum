@@ -1,0 +1,46 @@
+{
+    "home_advertisment": {
+        "css": [
+            ".vip-login-tip { display: none !important; }\n",
+            ".desktop-download-tip { display: none !important; }\n",
+            ".login-tip { display: none !important; }\n"
+        ]
+    },
+    "video_advertisment": {
+        "css": [
+            ".ad-report { display: none !important; }\n",
+            ".slide-ad-exp { display: none !important; }\n",
+            ".video-page-special-card-small { display: none !important; }\n",
+            ".video-page-game-card-small { display: none !important; }\n"
+        ]
+    },
+    "hot_live": {
+        "css": [
+            ".pop-live-small-mode { display: none !important; }\n"
+        ]
+    },
+    "video_vote": {
+        "css": [
+            ".bili-vote { display: none !important; }\n",
+            ".bpx-player-cmd-dm-inside { display: none !important; }\n"
+        ]
+    },
+    "dynamics_optimize": {
+        "css": [
+            ".bili-dyn-ads { display: none !important; }\n"
+        ]
+    },
+    "video_optimize": {
+        "css": [
+            "#activity_vote { display: none !important; }\n",
+            ".video-ai-assistant { display: none !important; }\n",
+            ".act-now { display: none !important; }\n",
+            ".act-end { display: none !important; }\n"
+        ]
+    },
+    "home_optimize": {
+        "css": [
+            ".floor-single-card { display: none !important; }\n"
+        ]
+    }
+}
